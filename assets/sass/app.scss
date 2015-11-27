@@ -1,0 +1,15 @@
+
+// Import custom Bootstrap variables
+@import "customVariables";
+
+// Import Bootstrap for Sass
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Import Bootstrap Compass integration
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+
+//custom
+@import "custom";
+
+//media queries
+@import "mediaq";

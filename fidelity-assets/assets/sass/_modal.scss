@@ -1,0 +1,113 @@
+.modal-content{
+		.close{
+			    opacity: 1;
+			    position: absolute;
+			    top: -32px;
+			    right: -21px;
+			    font-size: 2.5em;
+			    color: #fff;
+			    text-shadow: none;
+			    @media(max-width:$screen-xs-max){
+					    top: -10px;
+					    right: 4px;
+					    color: #000;
+			    }
+		}
+	    .inner-form{
+	    	    max-width: 650px;
+			    width: 100%;
+			    background-color: #fff;
+			    .header{
+		    	    padding: 36px 24px 24px 24px;
+				    background: #f0f0f0;
+				    text-align: center;
+						    .fa-wrapper{
+				    	    padding: 38px;
+						    background-color: #ffaeb9;
+						    width: 150px;
+						    margin: 0 auto;
+						    height: 150px;
+						    border-radius: 92px;
+						    text-align: center;
+						    color: #fff;
+							    i{
+							    	font-size: 7.9em;
+							    }
+				    		}
+				    		p{
+							    	margin-top:12px;
+							    	font-size:em(26);
+							    	color:#787878;
+							    	max-width: 350px;
+   									 margin: 0 auto;
+   									 margin-top: 24px;
+    								line-height: 32px;
+							    	span{
+							    		color:red;
+							    	}
+							    }
+			    } 
+			    .content{
+			    	    padding: 30px;
+			    	    text-align: center;
+			    	    .fa-wrapper{
+				    	    padding: 16px;
+						    background-color: #ffaeb9;
+						    width: 150px;
+						    margin: 0 auto 18px auto;
+						    height: 150px;
+						    border-radius: 92px;
+						    text-align: center;
+						    color: #fff;
+
+							    i{
+							    	font-size: 7.9em;
+							    }
+				    	}
+			    	    p{
+			    	    	font-size:em(32);
+			    	    	max-width: 372px;
+						    margin: 0 auto;
+						    line-height: 32px;
+    						margin-bottom: 24px;
+    						color:#111315;
+    						span{
+    							color:red;
+    						}
+			    	    }
+			    	    .btn{
+			    	    	background-color: #fff;
+						    border: 1px solid #e2475d;
+						    color: #787878;
+						    max-width: 350px;
+						    width: 100%;
+						    padding: 12px;
+						    font-size: 1.5em;
+						    border-radius: 0;
+			    	    }
+			    	    &.confirmation{
+			    	    	p{
+			    	    		font-size:em(28.76);
+			    	    		color:#787878;
+			    	    	}
+			    	    	.btn{
+			    	    		border: 1px solid #787878;
+			    	    		padding: 6px 12px;
+			    	    		&.no{
+			    	    			color:#787878;
+			    	    		}
+			    	    		&.yes{
+			    	    			background-color:#7f0027;
+			    	    			color:#fff;
+			    	    		}
+			    	    	}
+			    	    }
+			    }
+			    
+	    }
+	
+}
+
+.jquery-modal.blocker{
+	z-index:30 !important;
+}

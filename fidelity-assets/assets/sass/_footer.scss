@@ -1,0 +1,24 @@
+footer{
+	border-top:1px solid #a5a5a5;
+	.inner{
+		color:#a5a5a5;
+		    padding: 15px 53px;
+		    @extend .clearfix;
+		.copyright{
+			@include make-sm-column(6);
+			text-align: left;
+			font-size: em(16);
+			@media(max-width:$screen-xs-max){
+    					text-align: center;
+    					margin-bottom:12px;
+    		}
+		}
+		.poweredby{
+			@include make-sm-column(6);
+			text-align: right;
+			font-size: em(16);
+			@media(max-width:$screen-xs-max){
+    					text-align: center;    		}
+		}
+	}
+}

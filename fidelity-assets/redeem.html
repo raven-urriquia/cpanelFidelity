@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>title</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<main id="redeem">
+		<div class="wrapper">
+			<header>
+				<div class="quickprofile">
+					<div class="profile-image">
+						<img class="img-circle" src="assets/images/profile-image.jpg" alt="profile image">
+						<!--== for empty profile image ==-->
+						<!-- <div class="image"><i class="fa fa-user"></i></div> -->
+					</div>
+					<div class="info">
+						<p class="name">John Doe</p>
+						<p class="membersince">Member since September 23, 2015</p>
+						<p class="logout"><a href="#">Logout <i class="fa fa-sign-out"></i></a></p>
+					</div>
+				</div>
+				<div class="points-count">
+					<div class="points">500</div>
+					<div class="time">
+						<p class="currentpoints-label">Current Points</p>
+						<div class="time-date">
+							<div class="date">
+								october 7,2015 | 9:58 am
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<h1>Choose your Reward</h1>
+				<ul class="redeem-grid list-unstyled">
+					<li class="redeem-item" data-toggle="modal" data-target="#redeem1">
+						<!-- note: add inline background style to image-holder for dynamic output -->
+							<div class="image-holder">
+								<div class="overlay">
+									<p class="points">99 points on this reward</p>
+									<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+								</div>
+							</div>
+							<figure class="description">
+								<p>One Large NY Style super <br/>supreme pizza</p>
+								<div class="circle-points"><span>99</span> points</div>
+							</figure>
+					</li>
+					<li class="redeem-item">
+						<div class="image-holder">
+							<div class="overlay">
+								<p class="points">99 points on this reward</p>
+								<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+							</div>
+						</div>
+						<figure class="description">
+							<p>One Large NY Style super <br/>supreme pizza</p>
+							<div class="circle-points"><span>99</span> points</div>
+						</figure>
+					</li>
+					<li class="redeem-item">
+						<div class="image-holder">
+							<div class="overlay">
+								<p class="points">99 points on this reward</p>
+								<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+							</div>
+						</div>
+						<figure class="description">
+							<p>One Large NY Style super <br/>supreme pizza</p>
+							<div class="circle-points"><span>99</span> points</div>
+						</figure>
+					</li>
+					<li class="redeem-item">
+						<div class="image-holder">
+							<div class="overlay">
+								<p class="points">99 points on this reward</p>
+								<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+							</div>
+						</div>
+						<figure class="description">
+							<p>One Large NY Style super <br/>supreme pizza</p>
+							<div class="circle-points"><span>99</span> points</div>
+						</figure>
+					</li>
+					<li class="redeem-item">
+						<div class="image-holder">
+							<div class="overlay">
+								<p class="points">99 points on this reward</p>
+								<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+							</div>
+						</div>
+						<figure class="description">
+							<p>One Large NY Style super <br/>supreme pizza</p>
+							<div class="circle-points"><span>99</span> points</div>
+						</figure>
+					</li>
+					<li class="redeem-item">
+						<div class="image-holder">
+							<div class="overlay">
+								<p class="points">99 points on this reward</p>
+								<div class="fa-wrapper"><img src="assets/images/gift-icon1.png" alt="gift icon 1"></div>
+							</div>
+						</div>
+						<figure class="description">
+							<p>One Large NY Style super <br/>supreme pizza</p>
+							<div class="circle-points"><span>99</span> points</div>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- print code Modal -->
+		<div class="modal fade" id="redeem2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    		 	<span aria-hidden="true">&times;</span>
+		    		 </button>
+					<div class="inner-form">
+						<div class="content confirmation">
+							<p>Are you sure you want to redeem <span>599</span> points on this reward?</p>
+							<div class="clearfix">
+								<div class="col-sm-6"><button class="btn btn-default no">No</button></div>
+								<div class="col-sm-6"><button class="btn btn-default yes">Yes</button></div>
+							</div>
+						</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+		<!-- print code confirmation Modal -->
+		<div class="modal fade" id="redeem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    		 	<span aria-hidden="true">&times;</span>
+		    		 </button>
+					<div class="inner-form">
+						<div class="header">
+							<div class="fa-wrapper"><img src="assets/images/gift-icon2.jpg" alt="gift icon 2"></div>
+							<p>You just redeemed <span>599</span> points an awesome reward</p>
+						</div>
+						<div class="content">
+							<p>One Large NY Style super supreme pizza</p>
+							<button class="btn btn-default print-code">Print Code</button>
+						</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+
+
+	<footer>
+		<div class="inner">
+			<div class="copyright">&copy; Copyright Sbarro 2015. All rights reserved.</div>
+			<div class="poweredby">Powered by Fidelity</div>
+		</div>
+	</footer>
+
+		
+	</main>
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script src="assets/scripts/main.js"></script>
+</body>
+</html>

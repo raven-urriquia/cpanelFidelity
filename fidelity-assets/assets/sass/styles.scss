@@ -1,0 +1,27 @@
+@import 'bootstrap/bootstrap';
+
+html,body,main{
+	height:100%;
+}
+
+// Defining values
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-lg-max: 1400px;
+$screen-md-max: ($screen-lg-min - 1);
+
+body{
+	font-size:14px;
+}
+
+//mixins
+@import 'mixins';
+@import 'footer';
+//includes
+@import 'index';
+@import 'redeem';
+@import 'modal';
+@import 'punchcard';

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>title</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+	<main id="punchcard">
+		<div class="wrapper">
+			<header>
+				<div class="quickprofile">
+					<div class="profile-image">
+						<img class="img-circle" src="assets/images/profile-image.jpg" alt="profile image">
+						<!--== for empty profile image ==-->
+						<!-- <div class="image"><i class="fa fa-user"></i></div> -->
+					</div>
+					<div class="info">
+						<p class="name">John Doe</p>
+						<p class="membersince">Member since September 23, 2015</p>
+						<p class="logout"><a href="#">Logout <i class="fa fa-sign-out"></i></a></p>
+					</div>
+				</div>
+				<div class="points-count">
+					<!-- <div class="points">500</div>
+					<div class="time">
+						<p class="currentpoints-label">Current Points</p>
+						<div class="time-date">
+							<div class="date">
+								october 7,2015 | 9:58 am
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</header>
+			<div class="content">
+				<h1>Punch Card Name</h1>
+				<p class="expiration">Expires 07 2015</p>
+				<div class="dial">
+					<ul class="clearfix list-unstyled">
+						<li id="_1" class="col-md-2 col-sm-4">1</li>
+						<li id="_2" class="col-md-2 col-sm-4">2</li>
+						<li id="_3" class="col-md-2 col-sm-4">3</li>
+						<li id="_4" class="col-md-2 col-sm-4">4</li>
+						<li id="_5" class="col-md-2 col-sm-4">5<i class="fa fa-star"></i></li>
+						<li id="_6" class="col-md-2 col-sm-4 lowDial">6</li>
+						<li id="_7" class="col-md-2 col-sm-4 lowDial">7<i class="fa fa-star"></i></li>
+						<li id="_8" class="col-md-2 col-sm-4 lowDial">8</li>
+						<li id="_9" class="col-md-2 col-sm-4 lowDial">9</li>
+					</ul>
+					<button class="btn btn-default redeem" data-toggle="modal" data-target="#punchCard1">Redeem</button>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<!-- print code confirmation Modal -->
+		<div class="modal fade" id="punchCard1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    		 	<span aria-hidden="true">&times;</span>
+		    		 </button>
+					<div class="inner-form">
+						<div class="header">
+							<div class="fa-wrapper"><img src="assets/images/gift-icon2.jpg" alt="gift icon 2"></div>
+							<p>Congratulations! You can now redeem this awesome reward!</p>
+						</div>
+						<div class="content">
+							<p>One Large NY Style super supreme pizza</p>
+							<button class="btn btn-default redeemBtn">Redeem</button>
+						</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+		<!-- print code confirmation Modal -->
+		<div class="modal fade" id="punchCard2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    		 	<span aria-hidden="true">&times;</span>
+		    		 </button>
+					<div class="inner-form">
+						<div class="header">
+							<div class="fa-wrapper"><img src="assets/images/gift-icon2.jpg" alt="gift icon 2"></div>
+							<p>You are about to redeem this reward</p>
+						</div>
+						<div class="content">
+							<p>One Large NY Style super supreme pizza</p>
+							<button class="btn btn-default print-code">Print Code</button>
+						</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+		<!-- print code confirmation Modal -->
+		<div class="modal fade" id="punchCard3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    		 	<span aria-hidden="true">&times;</span>
+		    		 </button>
+					<div class="inner-form">
+						<div class="content">
+							<div class="fa-wrapper"><i class="fa fa-check"></i></div>
+							<p>Redeem Successful!</p>
+							<button class="btn btn-default ok">OK</button>
+						</div>
+					</div>
+		    </div>
+		  </div>
+		</div>	
+	
+
+
+
+	<footer>
+		<div class="inner">
+			<div class="copyright">&copy; Copyright Sbarro 2015. All rights reserved.</div>
+			<div class="poweredby">Powered by Fidelity</div>
+		</div>
+	</footer>
+
+		
+	</main>
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script src="assets/scripts/main.js"></script>
+</body>
+</html>

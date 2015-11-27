@@ -1,0 +1,54 @@
+#login{
+	.wrapper{
+		background-image: url('../images/bg1.png');
+		background-repeat: no-repeat;
+		background-color:#dddfe5;
+		height: 100%;
+		min-height: 682px;
+		padding: 36px;
+		.login-wrapper{
+			text-align: center;
+			max-width:527px;
+			margin:0 auto;
+			padding:24px;
+			background-color:#f5f7f6;
+			border-radius: 6px;
+			.logo{
+				margin:12px;
+			}
+			input{
+				margin-bottom:12px;
+				font-size:1.2em;
+				&[type="text"]{
+					padding:30px;
+				}
+			}
+			.btn{
+				padding:18px;
+				font-size:1.2em;
+				&.login{
+					background-color:#db1934;
+					color:#fff;
+				}
+				&.facebook-login{
+					background-color:#3765a3;
+				}
+			}
+		}
+	}
+}
+
+.wrapper{
+	min-height:500px;
+	p{
+		&.big{
+			margin:12px;
+			font-size:1.5em;
+		}
+		&.forgot-password{ 
+			margin:12px auto;
+			text-align: center;
+		}
+	}
+}
+
