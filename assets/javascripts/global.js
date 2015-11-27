@@ -142,3 +142,12 @@ function saveLocalStorage(targetResult){
         console.log("card");
     }
 }
+
+
+//-- quickstart next back
+function  qsNextBack(qs){
+    $(qs).parent('.qsFooter').parent('.qsWrapper').hide();
+    $(qs).parent('.qsFooter').parent('.qsWrapper').next('.qsWrapper').show();
+}
+
+//-- end

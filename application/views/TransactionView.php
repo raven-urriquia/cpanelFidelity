@@ -84,7 +84,7 @@
                         </tbody>
                     </table>
                 </div><!--noTab-->
-            </div>
+
         </div><!--/content-->
     </div> <!-- /container -->
 </div> <!--rightcontent-->

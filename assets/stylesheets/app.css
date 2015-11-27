@@ -8774,68 +8774,75 @@ button.close {
  * Created by PhpStorm.
  * User: G.ELLURANGGO
  */
-/* line 7, ../sass/_custom.scss */
+/* line 9, ../sass/_custom.scss */
 .font-family, body, #sidemenu {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 10, ../sass/_custom.scss */
+/* line 12, ../sass/_custom.scss */
 a, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/* line 13, ../sass/_custom.scss */
-.noBorderRadius, #rightcontent .header .howdy button, #rightcontent .container #content .fixed-table-container, .modal .modal-content, .modal .modal-body input, .modal .modal-body textarea, .modal .modal-body select, .forAddBtn .input-group select, .promos .form-control {
+/* line 15, ../sass/_custom.scss */
+.noBorderRadius, #rightcontent .header .howdy button, #rightcontent .container #content .fixed-table-container, .modal .modal-content, .modal .modal-body input, .modal .modal-body textarea, .modal .modal-body select, .forAddBtn .input-group select, .setupPunch .input-group select, .promos .form-control, .quickstart .qsWrapper .qsBody input, .quickstart .qsWrapper .qsBody select, .quickstart .qsWrapper .qsBody textarea {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
 
-/* line 18, ../sass/_custom.scss */
-.saveButton, .design .saveDesign {
+/* line 20, ../sass/_custom.scss */
+.noBoxShadow, .form-control {
+  -webkit-box-shadow: 0px 0px 0px 0px transparent;
+  -moz-box-shadow: 0px 0px 0px 0px transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+
+/* line 28, ../sass/_custom.scss */
+.saveButton, .design .saveDesign, .resetButton {
   font-size: 16px;
   height: 44px;
   width: 142px;
 }
 
-/* line 23, ../sass/_custom.scss */
+/* line 33, ../sass/_custom.scss */
 .spacing {
   margin-top: 40px !important;
 }
 
-/* line 26, ../sass/_custom.scss */
+/* line 36, ../sass/_custom.scss */
 i.fa {
   margin-right: 5px;
 }
 
-/* line 29, ../sass/_custom.scss */
+/* line 39, ../sass/_custom.scss */
 .form-control {
   padding: 6px 8px;
 }
 
-/* line 32, ../sass/_custom.scss */
+/* line 42, ../sass/_custom.scss */
 .form-control:focus {
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
 }
 
-/* line 37, ../sass/_custom.scss */
+/* line 47, ../sass/_custom.scss */
 .noPadRight {
   padding-right: 0;
 }
 
-/* line 40, ../sass/_custom.scss */
+/* line 50, ../sass/_custom.scss */
 .noPadLeft {
   padding-left: 0;
 }
 
-/* line 43, ../sass/_custom.scss */
+/* line 53, ../sass/_custom.scss */
 body {
   background-color: #E6E9ED;
 }
 
-/* line 47, ../sass/_custom.scss */
+/* line 57, ../sass/_custom.scss */
 .hex, .design .choosePalete .hex, .design .tabletChoosePalete .hex, .design .cardTab .hexwrap .hex {
   float: left;
   background-color: #F8F8F7;
@@ -8849,7 +8856,7 @@ body {
   line-height: 25px;
 }
 
-/* line 59, ../sass/_custom.scss */
+/* line 69, ../sass/_custom.scss */
 #sidemenu {
   position: fixed;
   left: 0;
@@ -8857,33 +8864,34 @@ body {
   width: 240px;
   float: left;
   height: 100%;
+  min-height: 100%;
   background: #152023;
 }
-/* line 69, ../sass/_custom.scss */
+/* line 80, ../sass/_custom.scss */
 #sidemenu .logoholder {
   height: 76px;
   float: left;
   background: #0F1A21;
   width: 100%;
 }
-/* line 76, ../sass/_custom.scss */
+/* line 87, ../sass/_custom.scss */
 #sidemenu #menu {
   background: #152023;
   float: left;
   width: 100%;
 }
-/* line 80, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 #sidemenu #menu ul {
   padding: 0;
   float: left;
 }
-/* line 84, ../sass/_custom.scss */
+/* line 95, ../sass/_custom.scss */
 #sidemenu #menu ul li {
   list-style: none;
   width: 100%;
   float: left;
 }
-/* line 89, ../sass/_custom.scss */
+/* line 100, ../sass/_custom.scss */
 #sidemenu #menu ul li a {
   color: #627181;
   display: block;
@@ -8892,7 +8900,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-/* line 96, ../sass/_custom.scss */
+/* line 107, ../sass/_custom.scss */
 #sidemenu #menu ul li a i {
   height: 60px;
   width: 58px;
@@ -8900,75 +8908,87 @@ body {
   float: left;
   margin-right: 18px;
 }
-/* line 103, ../sass/_custom.scss */
+/* line 114, ../sass/_custom.scss */
 #sidemenu #menu ul li a span {
   display: flex;
   align-items: center;
   height: 60px;
 }
-/* line 110, ../sass/_custom.scss */
+/* line 121, ../sass/_custom.scss */
 #sidemenu #menu ul li:hover, #sidemenu #menu ul li.active {
   background-color: #00615B;
 }
-/* line 113, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 #sidemenu #menu ul li:hover a > i, #sidemenu #menu ul li.active a > i {
   background-color: #007B75;
 }
-/* line 116, ../sass/_custom.scss */
+/* line 127, ../sass/_custom.scss */
 #sidemenu #menu li:hover a, #sidemenu #menu li.active a {
   color: #fff;
 }
-/* line 120, ../sass/_custom.scss */
+/* line 131, ../sass/_custom.scss */
 #sidemenu #menu a:hover, #sidemenu #menu a:active, #sidemenu #menu li.active a {
   text-decoration: none;
 }
-/* line 123, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 #sidemenu #menu a:hover .icon, #sidemenu #menu li.active a .icon {
   background-image: url("../images/menu_icons_hover.png");
 }
-/* line 126, ../sass/_custom.scss */
+/* line 137, ../sass/_custom.scss */
 #sidemenu #menu .icon {
   background-repeat: no-repeat;
   background-image: url("../images/menu_icons.png");
 }
-/* line 130, ../sass/_custom.scss */
-#sidemenu #menu li:first-child .icon {
+/* line 141, ../sass/_custom.scss */
+#sidemenu #menu li.das .icon {
   background-position: -2px 5px;
 }
-/* line 133, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(2) .icon {
+/* line 144, ../sass/_custom.scss */
+#sidemenu #menu li.man .icon {
   background-position: -2px -60px;
 }
-/* line 136, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(3) .icon {
+/* line 147, ../sass/_custom.scss */
+#sidemenu #menu li.mer .icon {
+  background-position: -2px -60px;
+}
+/* line 150, ../sass/_custom.scss */
+#sidemenu #menu li.add .icon {
   background-position: -2px -120px;
 }
-/* line 139, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(4) .icon {
+/* line 153, ../sass/_custom.scss */
+#sidemenu #menu li.des .icon {
   background-position: -2px -177px;
 }
-/* line 142, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(5) .icon {
+/* line 156, ../sass/_custom.scss */
+#sidemenu #menu li.pro .icon {
   background-position: -2px -237px;
 }
-/* line 145, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(6) .icon {
+/* line 159, ../sass/_custom.scss */
+#sidemenu #menu li.ach .icon {
   background-position: -2px -297px;
 }
-/* line 148, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(7) .icon {
+/* line 162, ../sass/_custom.scss */
+#sidemenu #menu li.rep .icon {
   background-position: -2px -357px;
 }
-/* line 151, ../sass/_custom.scss */
-#sidemenu #menu li:nth-child(8) .icon {
+/* line 165, ../sass/_custom.scss */
+#sidemenu #menu li.tra .icon {
   background-position: -2px -417px;
 }
-/* line 154, ../sass/_custom.scss */
-#sidemenu #menu li:last-child .icon {
+/* line 168, ../sass/_custom.scss */
+#sidemenu #menu li.hel .icon {
   background-position: -2px -477px;
 }
+/* line 171, ../sass/_custom.scss */
+#sidemenu #menu li.usr .icon {
+  background-position: -2px -536px;
+}
+/* line 174, ../sass/_custom.scss */
+#sidemenu #menu li.out .icon {
+  background-position: -2px -596px;
+}
 
-/* line 161, ../sass/_custom.scss */
+/* line 181, ../sass/_custom.scss */
 #rightcontent {
   float: left;
   width: 100%;
@@ -8976,7 +8996,7 @@ body {
   background-color: #E6E9ED;
   margin: 0;
 }
-/* line 167, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 #rightcontent .header {
   height: 76px;
   width: 100%;
@@ -8984,64 +9004,64 @@ body {
   padding: 0 35px;
   float: left;
 }
-/* line 174, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 #rightcontent .header h3 {
   font-weight: normal;
   margin-top: 24px;
 }
-/* line 178, ../sass/_custom.scss */
+/* line 198, ../sass/_custom.scss */
 #rightcontent .header .howdy {
   margin-top: 10px;
 }
-/* line 180, ../sass/_custom.scss */
+/* line 200, ../sass/_custom.scss */
 #rightcontent .header .howdy .btn-group {
   float: right;
 }
-/* line 183, ../sass/_custom.scss */
+/* line 203, ../sass/_custom.scss */
 #rightcontent .header .howdy img {
   margin-right: 10px;
 }
-/* line 186, ../sass/_custom.scss */
+/* line 206, ../sass/_custom.scss */
 #rightcontent .header .howdy button {
   border: 0;
   font-size: 15px;
 }
-/* line 190, ../sass/_custom.scss */
+/* line 210, ../sass/_custom.scss */
 #rightcontent .header .howdy button .caret {
   margin-left: 10px;
 }
-/* line 194, ../sass/_custom.scss */
+/* line 214, ../sass/_custom.scss */
 #rightcontent .header .howdy button:hover {
   background-color: #fefefe;
 }
-/* line 197, ../sass/_custom.scss */
+/* line 217, ../sass/_custom.scss */
 #rightcontent .header .howdy button.dropdown-toggle {
   -webkit-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
   background-color: #fff;
 }
-/* line 202, ../sass/_custom.scss */
+/* line 222, ../sass/_custom.scss */
 #rightcontent .header .howdy .dropdown-menu {
   width: 100%;
 }
-/* line 207, ../sass/_custom.scss */
+/* line 227, ../sass/_custom.scss */
 #rightcontent .container {
   width: 100%;
   padding: 0 35px;
 }
-/* line 210, ../sass/_custom.scss */
+/* line 230, ../sass/_custom.scss */
 #rightcontent .container .search {
   margin-top: 18px;
   float: left;
 }
-/* line 214, ../sass/_custom.scss */
+/* line 234, ../sass/_custom.scss */
 #rightcontent .container .search input[type="text"] {
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
   padding: 0 12px;
   height: 42px;
 }
-/* line 220, ../sass/_custom.scss */
+/* line 240, ../sass/_custom.scss */
 #rightcontent .container .search button {
   border-color: #ccc;
   background-color: #fff;
@@ -9050,12 +9070,13 @@ body {
   border-left: 0;
   outline: 0;
   padding: 10px 12px;
+  height: 42px;
 }
-/* line 228, ../sass/_custom.scss */
+/* line 249, ../sass/_custom.scss */
 #rightcontent .container .search button i {
   color: #AEAAA5;
 }
-/* line 233, ../sass/_custom.scss */
+/* line 254, ../sass/_custom.scss */
 #rightcontent .container #content {
   background-color: #fff;
   margin-top: 18px;
@@ -9063,23 +9084,23 @@ body {
   width: 100%;
   min-height: 400px;
 }
-/* line 239, ../sass/_custom.scss */
+/* line 260, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap {
   background-color: #F2F4F6;
   float: left;
   width: 100%;
   border-bottom: 1px solid #ddd;
 }
-/* line 244, ../sass/_custom.scss */
+/* line 265, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap .nav-tabs {
   float: left;
   border-bottom: 0;
 }
-/* line 247, ../sass/_custom.scss */
+/* line 268, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap .nav-tabs li {
   margin-bottom: -2px;
 }
-/* line 250, ../sass/_custom.scss */
+/* line 271, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap .nav-tabs li a {
   border-radius: 0;
   margin-right: 0;
@@ -9090,18 +9111,18 @@ body {
   background-position: right center;
   background-repeat: no-repeat;
 }
-/* line 260, ../sass/_custom.scss */
+/* line 281, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap .nav-tabs li.active a {
   font-weight: 600;
   background-image: none;
 }
-/* line 265, ../sass/_custom.scss */
+/* line 286, ../sass/_custom.scss */
 #rightcontent .container #content .navTabsWrap .addNew {
   float: right;
   color: #747474;
   padding: 10px 15px;
 }
-/* line 272, ../sass/_custom.scss */
+/* line 293, ../sass/_custom.scss */
 #rightcontent .container #content .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -9109,100 +9130,100 @@ body {
   min-height: 400px;
   padding: 1%;
 }
-/* line 279, ../sass/_custom.scss */
+/* line 300, ../sass/_custom.scss */
 #rightcontent .container #content .data-table {
   color: #575454;
   border: 0;
   margin-top: 15px;
 }
-/* line 283, ../sass/_custom.scss */
+/* line 304, ../sass/_custom.scss */
 #rightcontent .container #content .data-table td, #rightcontent .container #content .data-table th {
   border: 0 !important;
 }
-/* line 286, ../sass/_custom.scss */
+/* line 307, ../sass/_custom.scss */
 #rightcontent .container #content .data-table .edit, #rightcontent .container #content .data-table .delete {
   color: #C7C0BA;
   margin-left: 20px;
   float: right;
 }
-/* line 291, ../sass/_custom.scss */
+/* line 312, ../sass/_custom.scss */
 #rightcontent .container #content .data-table tbody tr {
   background-color: #F2F4F6;
   border-bottom: 1px solid #fff;
 }
-/* line 295, ../sass/_custom.scss */
+/* line 316, ../sass/_custom.scss */
 #rightcontent .container #content .data-table tbody tr:hover {
   background-color: #FFF6D8;
 }
-/* line 300, ../sass/_custom.scss */
+/* line 321, ../sass/_custom.scss */
 #rightcontent .container #content .data-table.management tr td:last-child, #rightcontent .container #content .data-table.management tr th:last-child {
   border-left: 0;
 }
-/* line 304, ../sass/_custom.scss */
+/* line 325, ../sass/_custom.scss */
 #rightcontent .container #content .fixed-table-container {
   border: 0;
 }
 
-/* line 313, ../sass/_custom.scss */
+/* line 334, ../sass/_custom.scss */
 .modal .modal-dialog {
   width: 430px;
 }
-/* line 316, ../sass/_custom.scss */
+/* line 337, ../sass/_custom.scss */
 .modal .modal-header {
   height: 50px;
   font-size: 18px;
   padding: 15px 34px;
   border-bottom: 0;
 }
-/* line 324, ../sass/_custom.scss */
+/* line 345, ../sass/_custom.scss */
 .modal .modal-content span.ex {
   position: absolute;
   top: -20px;
   right: -20px;
   cursor: pointer;
 }
-/* line 329, ../sass/_custom.scss */
+/* line 350, ../sass/_custom.scss */
 .modal .modal-content span.ex i {
   font-size: 20px;
   color: #E9E6E3;
 }
-/* line 335, ../sass/_custom.scss */
+/* line 356, ../sass/_custom.scss */
 .modal .modal-body {
   padding: 15px 34px;
   background-color: #F0F3F5;
 }
-/* line 338, ../sass/_custom.scss */
+/* line 359, ../sass/_custom.scss */
 .modal .modal-body label {
   font-weight: normal;
   color: #a3a3a3;
 }
-/* line 342, ../sass/_custom.scss */
+/* line 363, ../sass/_custom.scss */
 .modal .modal-body input, .modal .modal-body textarea, .modal .modal-body select {
   margin-bottom: 20px;
   border-color: transparent;
 }
-/* line 347, ../sass/_custom.scss */
+/* line 368, ../sass/_custom.scss */
 .modal .modal-body input[type="text"] {
   padding: 0 12px;
   height: 42.2px;
 }
-/* line 351, ../sass/_custom.scss */
+/* line 372, ../sass/_custom.scss */
 .modal .modal-body select {
   height: 42.2px;
 }
-/* line 354, ../sass/_custom.scss */
+/* line 375, ../sass/_custom.scss */
 .modal .modal-body textarea {
   width: 100%;
   resize: none;
 }
 
-/* line 362, ../sass/_custom.scss */
-#addBranch button, #addEmployee button, #addTablet button {
+/* line 383, ../sass/_custom.scss */
+#addBranch button, #addEmployee button, #addTablet button, #merchantDetails button, #addUser button {
   width: 48%;
   padding: 12px;
 }
-/* line 367, ../sass/_custom.scss */
-#addBranch label[for=fourDigit] a i, #addEmployee label[for=fourDigit] a i, #addTablet label[for=fourDigit] a i {
+/* line 388, ../sass/_custom.scss */
+#addBranch label[for=fourDigit] a i, #addEmployee label[for=fourDigit] a i, #addTablet label[for=fourDigit] a i, #merchantDetails label[for=fourDigit] a i, #addUser label[for=fourDigit] a i {
   color: #a3a3a3;
 }
 
@@ -9226,19 +9247,19 @@ body {
     transform: scale(2);
   }
 }
-/* line 393, ../sass/_custom.scss */
+/* line 414, ../sass/_custom.scss */
 .btn {
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
 
-/* line 398, ../sass/_custom.scss */
+/* line 419, ../sass/_custom.scss */
 .btn:focus {
   outline: -webkit-focus-ring-color auto 0;
 }
 
-/* line 401, ../sass/_custom.scss */
+/* line 422, ../sass/_custom.scss */
 .effect {
   margin: -100px;
   width: 200px;
@@ -9252,51 +9273,51 @@ body {
   -webkit-animation: clickeffect 1s ease;
 }
 
-/* line 413, ../sass/_custom.scss */
+/* line 434, ../sass/_custom.scss */
 .withIco {
   font-size: 16px;
   color: #666464;
   margin-bottom: 16px;
 }
-/* line 417, ../sass/_custom.scss */
+/* line 438, ../sass/_custom.scss */
 .withIco img {
   margin-right: 10px;
 }
 
-/* line 421, ../sass/_custom.scss */
+/* line 442, ../sass/_custom.scss */
 .design {
   padding: 20px 30px;
 }
-/* line 423, ../sass/_custom.scss */
+/* line 444, ../sass/_custom.scss */
 .design .cardTab, .design .tabletTab {
   display: none;
 }
-/* line 424, ../sass/_custom.scss */
+/* line 445, ../sass/_custom.scss */
 .design .mobileTab, .design .cardTab, .design .tabletTab {
   float: left;
   width: 100%;
 }
-/* line 429, ../sass/_custom.scss */
+/* line 450, ../sass/_custom.scss */
 .design .btn#btnTablet, .design .btn#btnCard, .design .btn#btnMobile {
   float: left;
   width: 85px;
   height: 40px;
 }
-/* line 435, ../sass/_custom.scss */
+/* line 456, ../sass/_custom.scss */
 .design .imgPrev {
   float: left;
   margin-right: 20px;
   width: 63px;
 }
-/* line 440, ../sass/_custom.scss */
+/* line 461, ../sass/_custom.scss */
 .design .mobileTablet {
   margin-top: 30px;
 }
-/* line 444, ../sass/_custom.scss */
+/* line 465, ../sass/_custom.scss */
 .design .left .col-md-12 {
   margin-top: 30px;
 }
-/* line 448, ../sass/_custom.scss */
+/* line 469, ../sass/_custom.scss */
 .design .btn-file {
   position: relative;
   overflow: hidden;
@@ -9306,7 +9327,7 @@ body {
   border: 0;
   background-color: #F6F5F4;
 }
-/* line 457, ../sass/_custom.scss */
+/* line 478, ../sass/_custom.scss */
 .design .btn-file input[type=file] {
   filter: alpha(opacity=0);
   opacity: 0;
@@ -9319,7 +9340,7 @@ body {
   display: block;
   cursor: pointer;
 }
-/* line 470, ../sass/_custom.scss */
+/* line 491, ../sass/_custom.scss */
 .design .uploadLogo i, .design .addBackImage i, .design .choosePalete i, .design .upStampC i, .design .upStampG i, .design .cardUploadLogo i, .design .cardAddBackImage i, .design .cardAddBackColor i, .design .tabletUploadLogo i, .design .tabletAddBackImage i, .design .tabletChoosePalete i {
   font-size: 10px;
   color: #cccaca;
@@ -9327,7 +9348,7 @@ body {
   float: left;
   margin-top: 10px;
 }
-/* line 477, ../sass/_custom.scss */
+/* line 498, ../sass/_custom.scss */
 .design .uploadLogo .sp, .design .addBackImage .sp, .design .choosePalete .sp, .design .upStampC .sp, .design .upStampG .sp, .design .cardUploadLogo .sp, .design .cardAddBackImage .sp, .design .cardAddBackColor .sp, .design .tabletUploadLogo .sp, .design .tabletAddBackImage .sp, .design .tabletChoosePalete .sp {
   float: left;
   width: 100%;
@@ -9335,40 +9356,43 @@ body {
   font-size: 12px;
   margin-bottom: 5px;
 }
-/* line 486, ../sass/_custom.scss */
+/* line 507, ../sass/_custom.scss */
 .design .choosePalete .sp-replacer, .design .tabletChoosePalete .sp-replacer {
   float: left;
 }
-/* line 489, ../sass/_custom.scss */
+/* line 510, ../sass/_custom.scss */
 .design .choosePalete .customPaletteBox, .design .tabletChoosePalete .customPaletteBox {
   margin-top: 10px;
   float: left;
 }
-/* line 498, ../sass/_custom.scss */
+/* line 518, ../sass/_custom.scss */
+.design .choosePalete .col-md-4, .design .tabletChoosePalete .col-md-4 {
+  padding: 0;
+}
+/* line 520, ../sass/_custom.scss */
 .design .choosePalete .col-md-4 i, .design .tabletChoosePalete .col-md-4 i {
   font-size: 12px;
   font-style: normal;
   color: #a7a7a7;
   margin-bottom: 9px;
 }
-/* line 505, ../sass/_custom.scss */
+/* line 527, ../sass/_custom.scss */
 .design .choosePalete .presetPalette, .design .tabletChoosePalete .presetPalette {
-  width: 230px;
   float: left;
 }
-/* line 508, ../sass/_custom.scss */
+/* line 530, ../sass/_custom.scss */
 .design .choosePalete .presetPalette button, .design .tabletChoosePalete .presetPalette button {
   width: 174px;
   padding: 0;
   border: 0;
 }
-/* line 512, ../sass/_custom.scss */
+/* line 534, ../sass/_custom.scss */
 .design .choosePalete .presetPalette button .p1, .design .choosePalete .presetPalette button .p2, .design .choosePalete .presetPalette button .p3, .design .choosePalete .presetPalette button .tp1, .design .choosePalete .presetPalette button .tp2, .design .choosePalete .presetPalette button .tp3, .design .tabletChoosePalete .presetPalette button .p1, .design .tabletChoosePalete .presetPalette button .p2, .design .tabletChoosePalete .presetPalette button .p3, .design .tabletChoosePalete .presetPalette button .tp1, .design .tabletChoosePalete .presetPalette button .tp2, .design .tabletChoosePalete .presetPalette button .tp3 {
   width: 46px;
   height: 38px;
   float: left;
 }
-/* line 518, ../sass/_custom.scss */
+/* line 540, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .caret, .design .tabletChoosePalete .presetPalette .caret {
   border: 0;
   float: right;
@@ -9376,101 +9400,101 @@ body {
   width: 36px;
   background: url("../images/caret.png") no-repeat center #F0EFED;
 }
-/* line 526, ../sass/_custom.scss */
+/* line 548, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu, .design .choosePalete .presetPalette .tabletPrePaletteMnu, .design .tabletChoosePalete .presetPalette .prePaletteMnu, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu {
   right: -176px;
   left: inherit;
   padding: 24px 26px;
   margin-top: -90%;
 }
-/* line 531, ../sass/_custom.scss */
+/* line 553, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li, .design .choosePalete .presetPalette .tabletPrePaletteMnu li, .design .tabletChoosePalete .presetPalette .prePaletteMnu li, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li {
   margin-bottom: 12px;
 }
-/* line 533, ../sass/_custom.scss */
+/* line 555, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li a, .design .choosePalete .presetPalette .tabletPrePaletteMnu li a, .design .tabletChoosePalete .presetPalette .prePaletteMnu li a, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li a {
   display: block;
   padding: 0;
 }
-/* line 536, ../sass/_custom.scss */
+/* line 558, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li a i, .design .choosePalete .presetPalette .tabletPrePaletteMnu li a i, .design .tabletChoosePalete .presetPalette .prePaletteMnu li a i, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li a i {
   width: 58px;
   height: 38px;
   float: left;
   margin: 0;
 }
-/* line 543, ../sass/_custom.scss */
+/* line 565, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li span, .design .choosePalete .presetPalette .tabletPrePaletteMnu li span, .design .tabletChoosePalete .presetPalette .prePaletteMnu li span, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li span {
   color: #818181;
   font-size: 11px;
 }
-/* line 549, ../sass/_custom.scss */
+/* line 571, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette1 i:first-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:first-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette1 i:first-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:first-child {
   background-color: #222532;
 }
-/* line 552, ../sass/_custom.scss */
+/* line 574, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette1 i:nth-child(2), .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:nth-child(2), .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette1 i:nth-child(2), .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:nth-child(2) {
   background-color: #009573;
 }
-/* line 555, ../sass/_custom.scss */
+/* line 577, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette1 i:last-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:last-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette1 i:last-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette1 i:last-child {
   background-color: #8CE994;
 }
-/* line 560, ../sass/_custom.scss */
+/* line 582, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette2 i:first-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:first-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette2 i:first-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:first-child {
   background-color: #43062E;
 }
-/* line 563, ../sass/_custom.scss */
+/* line 585, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette2 i:nth-child(2), .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:nth-child(2), .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette2 i:nth-child(2), .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:nth-child(2) {
   background-color: #922648;
 }
-/* line 566, ../sass/_custom.scss */
+/* line 588, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette2 i:last-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:last-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette2 i:last-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette2 i:last-child {
   background-color: #F90047;
 }
-/* line 571, ../sass/_custom.scss */
+/* line 593, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette3 i:first-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:first-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette3 i:first-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:first-child {
   background-color: #2F2F2C;
 }
-/* line 574, ../sass/_custom.scss */
+/* line 596, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette3 i:nth-child(2), .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:nth-child(2), .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette3 i:nth-child(2), .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:nth-child(2) {
   background-color: #005B67;
 }
-/* line 577, ../sass/_custom.scss */
+/* line 599, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette3 i:last-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:last-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette3 i:last-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette3 i:last-child {
   background-color: #00A8A0;
 }
-/* line 582, ../sass/_custom.scss */
+/* line 604, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette4 i:first-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:first-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette4 i:first-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:first-child {
   background-color: #FFF7EA;
 }
-/* line 585, ../sass/_custom.scss */
+/* line 607, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette4 i:nth-child(2), .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:nth-child(2), .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette4 i:nth-child(2), .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:nth-child(2) {
   background-color: #00ECFF;
 }
-/* line 588, ../sass/_custom.scss */
+/* line 610, ../sass/_custom.scss */
 .design .choosePalete .presetPalette .prePaletteMnu li.palette4 i:last-child, .design .choosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:last-child, .design .tabletChoosePalete .presetPalette .prePaletteMnu li.palette4 i:last-child, .design .tabletChoosePalete .presetPalette .tabletPrePaletteMnu li.palette4 i:last-child {
   background-color: #00CBD6;
 }
-/* line 596, ../sass/_custom.scss */
+/* line 618, ../sass/_custom.scss */
 .design .choosePalete .savePalette, .design .tabletChoosePalete .savePalette {
   float: right;
   width: 102px;
   border: 1px solid #C3BFB9;
 }
-/* line 606, ../sass/_custom.scss */
+/* line 628, ../sass/_custom.scss */
 .design .right {
   text-align: center;
 }
-/* line 611, ../sass/_custom.scss */
+/* line 633, ../sass/_custom.scss */
 .design .mobileFrame .screen1 {
   float: right !important;
 }
-/* line 613, ../sass/_custom.scss */
+/* line 635, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .customMobileBgImg {
   background-image: url("../images/fidelityMobileDesignBg.jpg");
 }
-/* line 617, ../sass/_custom.scss */
+/* line 639, ../sass/_custom.scss */
 .design .mobileFrame .screen1, .design .mobileFrame .screen2 {
   background: url("../images/androidFrame.jpg") no-repeat top center;
   float: left;
@@ -9478,35 +9502,35 @@ body {
   height: 462px;
   margin: 58px auto 0;
 }
-/* line 623, ../sass/_custom.scss */
+/* line 645, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .customMobileBgImg, .design .mobileFrame .screen2 .customMobileBgImg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 628, ../sass/_custom.scss */
+/* line 650, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .customMobileBgImg, .design .mobileFrame .screen1 .customMobileBgColor, .design .mobileFrame .screen1 .screen2box, .design .mobileFrame .screen2 .customMobileBgImg, .design .mobileFrame .screen2 .customMobileBgColor, .design .mobileFrame .screen2 .screen2box {
   width: 216px;
   margin: 42px auto 0 auto;
   height: 382px;
 }
-/* line 633, ../sass/_custom.scss */
+/* line 655, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .inside, .design .mobileFrame .screen2 .inside {
   width: 100%;
   height: 382px;
   background: url("../images/fidelityMobileDesign.png") top center no-repeat;
 }
-/* line 637, ../sass/_custom.scss */
+/* line 659, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .inside .customLogo, .design .mobileFrame .screen2 .inside .customLogo {
   margin: 46px auto 0 auto;
   height: 120px;
   width: 120px;
 }
-/* line 643, ../sass/_custom.scss */
+/* line 665, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box, .design .mobileFrame .screen2 .screen2box {
   background-color: #F3F7F5;
 }
-/* line 645, ../sass/_custom.scss */
+/* line 667, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .topPane, .design .mobileFrame .screen2 .screen2box .topPane {
   height: 26px;
   width: 100%;
@@ -9514,7 +9538,7 @@ body {
   background-color: #00C9FF;
   background-image: url("../images/topPane.png");
 }
-/* line 652, ../sass/_custom.scss */
+/* line 674, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .text, .design .mobileFrame .screen2 .screen2box .text {
   height: 60px;
   float: left;
@@ -9523,22 +9547,22 @@ body {
   text-align: center;
   background-color: #f4f4f4;
 }
-/* line 659, ../sass/_custom.scss */
+/* line 681, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .text p, .design .mobileFrame .screen2 .screen2box .text p {
   font-size: 8px;
 }
-/* line 663, ../sass/_custom.scss */
+/* line 685, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .stampWrap, .design .mobileFrame .screen2 .screen2box .stampWrap {
   float: left;
   width: 100%;
   padding-top: 10px;
 }
-/* line 667, ../sass/_custom.scss */
+/* line 690, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .stampWrap ul, .design .mobileFrame .screen2 .screen2box .stampWrap ul {
   padding: 0;
   text-align: center;
 }
-/* line 670, ../sass/_custom.scss */
+/* line 693, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .stampWrap ul li, .design .mobileFrame .screen2 .screen2box .stampWrap ul li {
   border: 1px solid #00D4FE;
   margin-bottom: 26px;
@@ -9557,16 +9581,16 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 687, ../sass/_custom.scss */
+/* line 710, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .stampWrap ul li:nth-child(3n+3), .design .mobileFrame .screen2 .screen2box .stampWrap ul li:nth-child(3n+3) {
   margin-right: 0;
 }
-/* line 691, ../sass/_custom.scss */
+/* line 714, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .stampWrap ul li.g, .design .mobileFrame .screen2 .screen2box .stampWrap ul li.g {
   border-color: #B7EBF5;
   color: #B7EBF5;
 }
-/* line 697, ../sass/_custom.scss */
+/* line 720, ../sass/_custom.scss */
 .design .mobileFrame .screen1 .screen2box .redeem, .design .mobileFrame .screen2 .screen2box .redeem {
   width: 174px;
   -webkit-border-radius: 5px;
@@ -9577,11 +9601,11 @@ body {
   font-weight: 600;
   background-color: #00C9FF;
 }
-/* line 710, ../sass/_custom.scss */
+/* line 733, ../sass/_custom.scss */
 .design .cardFrame {
   text-align: center;
 }
-/* line 713, ../sass/_custom.scss */
+/* line 736, ../sass/_custom.scss */
 .design .cardFrame .cardWrap {
   margin: 88px auto;
   width: 526px;
@@ -9594,64 +9618,66 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 724, ../sass/_custom.scss */
+/* line 747, ../sass/_custom.scss */
 .design .cardFrame .cardWrap .overlay {
   float: left;
   width: 100%;
   height: 100%;
 }
-/* line 729, ../sass/_custom.scss */
+/* line 752, ../sass/_custom.scss */
 .design .cardFrame .cardWrap .cardLogo {
   margin: 46px 0 0 41px;
   width: 109px;
   height: 109px;
   float: left;
 }
-/* line 735, ../sass/_custom.scss */
+/* line 758, ../sass/_custom.scss */
 .design .cardFrame .cardWrap .qr {
   float: right;
   margin: 46px 46px 0 0;
 }
-/* line 742, ../sass/_custom.scss */
+/* line 765, ../sass/_custom.scss */
 .design .cardTab .hexwrap {
   float: left;
 }
-/* line 745, ../sass/_custom.scss */
+/* line 768, ../sass/_custom.scss */
 .design .cardTab .hexwrap .hex {
   width: 100px;
 }
-/* line 749, ../sass/_custom.scss */
+/* line 772, ../sass/_custom.scss */
 .design .cardTab .hexwrap .sp-replacer {
   float: left;
 }
-/* line 755, ../sass/_custom.scss */
+/* line 778, ../sass/_custom.scss */
 .design .tabletTab .tabletFrame {
   background: url("../images/ipad.jpg") no-repeat top center;
   margin: 58px auto 0;
   width: 514px;
   height: 354px;
 }
-/* line 760, ../sass/_custom.scss */
+/* line 783, ../sass/_custom.scss */
 .design .tabletTab .tabletFrame .tabletLayout {
   background: url("../images/tabletCustomBg.jpg") no-repeat center;
   width: 447px;
   height: 279px;
   margin: 38px 0 0 33px;
   float: left;
+  background-size: cover;
 }
-/* line 767, ../sass/_custom.scss */
+/* line 791, ../sass/_custom.scss */
 .design .tabletTab .tabletFrame .customTablet {
   background: url("../images/tabletBg.png") no-repeat center;
   width: 447px;
   height: 279px;
   float: left;
 }
-/* line 772, ../sass/_custom.scss */
+/* line 796, ../sass/_custom.scss */
 .design .tabletTab .tabletFrame .customTablet img.tabletCustomLogo {
-  width: 70px;
-  margin-top: 5px;
+  width: 60px;
+  margin-top: 12px;
+  height: 60px;
 }
-/* line 776, ../sass/_custom.scss */
+/* line 801, ../sass/_custom.scss */
 .design .tabletTab .tabletFrame .customTablet .customButton {
   background-color: #00AFEE;
   color: #fff;
@@ -9662,30 +9688,30 @@ body {
   width: 176px;
 }
 
-/* line 790, ../sass/_custom.scss */
+/* line 815, ../sass/_custom.scss */
 .noTab {
   padding: 1%;
 }
-/* line 792, ../sass/_custom.scss */
+/* line 817, ../sass/_custom.scss */
 .noTab table.data-table {
   margin-top: 0 !important;
 }
 
-/* line 797, ../sass/_custom.scss */
+/* line 822, ../sass/_custom.scss */
 .forAddBtn {
   margin-top: 18px;
 }
-/* line 799, ../sass/_custom.scss */
+/* line 824, ../sass/_custom.scss */
 .forAddBtn .input-group {
   float: right;
   width: 182px;
 }
-/* line 802, ../sass/_custom.scss */
+/* line 827, ../sass/_custom.scss */
 .forAddBtn .input-group .input-group-addon {
   border: 0;
   background-color: transparent;
 }
-/* line 810, ../sass/_custom.scss */
+/* line 835, ../sass/_custom.scss */
 .forAddBtn .btn-default {
   background-color: #fff;
   float: right;
@@ -9694,54 +9720,68 @@ body {
   padding: 10px;
 }
 
-/* line 819, ../sass/_custom.scss */
+/* line 844, ../sass/_custom.scss */
+.setupPunch .row {
+  width: 360px;
+}
+/* line 849, ../sass/_custom.scss */
+.setupPunch .input-group {
+  float: right;
+}
+/* line 852, ../sass/_custom.scss */
+.setupPunch .input-group .input-group-addon {
+  border: 0;
+  background-color: transparent;
+}
+
+/* line 861, ../sass/_custom.scss */
 .promos {
   padding: 20px 30px;
 }
-/* line 821, ../sass/_custom.scss */
+/* line 863, ../sass/_custom.scss */
 .promos .row {
   margin-bottom: 20px;
 }
-/* line 824, ../sass/_custom.scss */
+/* line 866, ../sass/_custom.scss */
 .promos h4 {
   font-size: 21px;
   color: #666464;
   margin-bottom: 25px;
 }
-/* line 829, ../sass/_custom.scss */
+/* line 871, ../sass/_custom.scss */
 .promos h5 {
   font-size: 19px;
   color: #111315;
 }
-/* line 833, ../sass/_custom.scss */
+/* line 875, ../sass/_custom.scss */
 .promos label, .promos h6 {
   color: #969595;
   font-weight: 400;
   font-size: 14px;
   margin-top: 10px;
 }
-/* line 839, ../sass/_custom.scss */
+/* line 881, ../sass/_custom.scss */
 .promos .form-control {
   height: 42px;
   border: 1px solid #D3D0CB;
 }
-/* line 844, ../sass/_custom.scss */
+/* line 886, ../sass/_custom.scss */
 .promos .amountProduct a {
   font-size: 14px;
   color: #b9b8b8;
   float: left;
   padding: 0 15px;
 }
-/* line 849, ../sass/_custom.scss */
+/* line 891, ../sass/_custom.scss */
 .promos .amountProduct a:first-child {
   border-right: 1px solid;
 }
-/* line 852, ../sass/_custom.scss */
+/* line 894, ../sass/_custom.scss */
 .promos .amountProduct a.active, .promos .amountProduct a:hover {
   font-weight: 600;
   color: #438787;
 }
-/* line 857, ../sass/_custom.scss */
+/* line 899, ../sass/_custom.scss */
 .promos .earningReward1, .promos .earningReward2 {
   background-color: #F6F7F9;
   padding: 26px 34px;
@@ -9750,63 +9790,102 @@ body {
   margin-top: 12px;
   margin-bottom: 20px;
 }
-/* line 864, ../sass/_custom.scss */
+/* line 906, ../sass/_custom.scss */
 .promos .earningReward1 .form-control, .promos .earningReward2 .form-control {
   float: left;
 }
-/* line 868, ../sass/_custom.scss */
+/* line 910, ../sass/_custom.scss */
 .promos .earningReward1 .input-group-addon, .promos .earningReward2 .input-group-addon {
   background-color: transparent;
   border: 0;
   padding-left: 0;
 }
-/* line 872, ../sass/_custom.scss */
+/* line 914, ../sass/_custom.scss */
 .promos .earningReward1 .input-group-addon:last-child, .promos .earningReward2 .input-group-addon:last-child {
   padding-left: 10px !important;
 }
-/* line 876, ../sass/_custom.scss */
+/* line 918, ../sass/_custom.scss */
 .promos .earningReward1 .rewards, .promos .earningReward1 .prodWrap, .promos .earningReward2 .rewards, .promos .earningReward2 .prodWrap {
   margin-bottom: 10px;
   float: left;
   width: 100%;
 }
-/* line 881, ../sass/_custom.scss */
+/* line 923, ../sass/_custom.scss */
 .promos .earningReward1 .addReward, .promos .earningReward2 .addReward {
   background-color: #E5E7ED;
   border: 0;
   font-size: 13px;
   margin-top: 20px;
 }
-/* line 888, ../sass/_custom.scss */
+/* line 930, ../sass/_custom.scss */
 .promos .earningReward2 {
   display: none;
 }
-/* line 890, ../sass/_custom.scss */
+/* line 932, ../sass/_custom.scss */
 .promos .earningReward2 .fa.del {
   color: #D6D8DF;
   font-size: 16px;
   line-height: 38px;
 }
 
-/* line 899, ../sass/_custom.scss */
+/* line 941, ../sass/_custom.scss */
+#merchantDetails .modal-dialog {
+  width: 542px;
+}
+/* line 944, ../sass/_custom.scss */
+#merchantDetails input {
+  background-color: transparent;
+  cursor: text;
+  margin-bottom: 6px;
+}
+/* line 949, ../sass/_custom.scss */
+#merchantDetails select {
+  margin-bottom: 6px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+/* line 954, ../sass/_custom.scss */
+#merchantDetails label {
+  margin-top: 8px;
+}
+/* line 957, ../sass/_custom.scss */
+#merchantDetails #merchDepSlip {
+  margin-top: 6px;
+}
+/* line 961, ../sass/_custom.scss */
+#merchantDetails .form-group {
+  margin-bottom: 5px;
+}
+
+/* line 965, ../sass/_custom.scss */
+.actionButton {
+  margin-top: 20px;
+}
+
+/* line 969, ../sass/_custom.scss */
+#addUser .radio {
+  margin-top: 0;
+}
+
+/* line 975, ../sass/_custom.scss */
 .dashboard {
   background-color: transparent !important;
   width: 100%;
   float: left;
   margin-top: 10px !important;
 }
-/* line 904, ../sass/_custom.scss */
+/* line 980, ../sass/_custom.scss */
 .dashboard .counts {
   margin-top: 35px;
   color: #fff;
 }
-/* line 907, ../sass/_custom.scss */
+/* line 983, ../sass/_custom.scss */
 .dashboard .counts .count {
   padding: 0;
   width: 100%;
   float: left;
 }
-/* line 911, ../sass/_custom.scss */
+/* line 987, ../sass/_custom.scss */
 .dashboard .counts .count li {
   list-style: none;
   height: 264px;
@@ -9815,90 +9894,320 @@ body {
   width: 180px;
   text-align: center;
 }
-/* line 921, ../sass/_custom.scss */
+/* line 997, ../sass/_custom.scss */
 .dashboard .counts .count li p {
   font-size: 17px;
   min-height: 48px;
 }
-/* line 925, ../sass/_custom.scss */
+/* line 1001, ../sass/_custom.scss */
 .dashboard .counts .count li h3 {
   font-size: 65px;
   font-weight: 600;
 }
-/* line 930, ../sass/_custom.scss */
+/* line 1006, ../sass/_custom.scss */
 .dashboard .counts .count li:first-child {
   background: url("../images/newSignups.jpg") bottom center #f00a4a;
 }
-/* line 933, ../sass/_custom.scss */
+/* line 1009, ../sass/_custom.scss */
 .dashboard .counts .count li:nth-child(2) {
   background: url("../images/prodRewarded.jpg") bottom center #A3E7A1;
 }
-/* line 936, ../sass/_custom.scss */
+/* line 1012, ../sass/_custom.scss */
 .dashboard .counts .count li:last-child {
   background: url("../images/recentTrans.jpg") bottom center #00977B;
 }
 
-/* line 947, ../sass/_custom.scss */
+/* line 1023, ../sass/_custom.scss */
 #monthlyReport {
   overflow: auto;
 }
-/* line 949, ../sass/_custom.scss */
+/* line 1025, ../sass/_custom.scss */
 #monthlyReport .line {
   stroke: #0c9b81;
   stroke-width: 1;
   fill: none;
 }
-/* line 955, ../sass/_custom.scss */
+/* line 1031, ../sass/_custom.scss */
 #monthlyReport .axis {
   shape-rendering: crispEdges;
 }
-/* line 959, ../sass/_custom.scss */
+/* line 1035, ../sass/_custom.scss */
 #monthlyReport .x.axis line {
   stroke: rgba(88, 89, 93, 0.12);
 }
-/* line 963, ../sass/_custom.scss */
+/* line 1039, ../sass/_custom.scss */
 #monthlyReport .x.axis .minor {
   stroke-opacity: .5;
 }
-/* line 967, ../sass/_custom.scss */
+/* line 1043, ../sass/_custom.scss */
 #monthlyReport .x.axis path {
   display: none;
 }
-/* line 971, ../sass/_custom.scss */
+/* line 1047, ../sass/_custom.scss */
 #monthlyReport .y.axis line, #monthlyReport .y.axis path {
   fill: none;
   stroke: rgba(88, 89, 93, 0.5);
 }
-/* line 976, ../sass/_custom.scss */
+/* line 1052, ../sass/_custom.scss */
 #monthlyReport .axis path,
 #monthlyReport .axis line {
   fill: none;
   stroke: rgba(88, 89, 93, 0.3);
   shape-rendering: crispEdges;
 }
-/* line 983, ../sass/_custom.scss */
+/* line 1059, ../sass/_custom.scss */
 #monthlyReport .axis text {
   font: 12px;
   fill: rgba(35, 31, 32, 0.5);
 }
-/* line 987, ../sass/_custom.scss */
+/* line 1063, ../sass/_custom.scss */
 #monthlyReport .tick text {
   font-size: 12px;
 }
-/* line 991, ../sass/_custom.scss */
+/* line 1067, ../sass/_custom.scss */
 #monthlyReport .tick line {
   opacity: 1;
 }
 
+/* line 1074, ../sass/_custom.scss */
+.qsTwo, .qsThree, .qsFinish {
+  display: none;
+}
+
+/* line 1077, ../sass/_custom.scss */
+.punchcard {
+  display: none;
+}
+
+/* line 1080, ../sass/_custom.scss */
+.loyalty {
+  display: none;
+}
+
+/* line 1083, ../sass/_custom.scss */
+.quickstart {
+  position: absolute;
+  background-image: url("../images/qsBg.png");
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  overflow-y: auto;
+}
+/* line 1094, ../sass/_custom.scss */
+.quickstart .content {
+  width: 70%;
+  margin: 4% auto;
+}
+/* line 1100, ../sass/_custom.scss */
+.quickstart .steps h3 {
+  color: #fff;
+}
+/* line 1103, ../sass/_custom.scss */
+.quickstart .steps span {
+  float: left;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 18px;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* line 1115, ../sass/_custom.scss */
+.quickstart .steps .right {
+  float: left;
+  margin-left: 10px;
+}
+/* line 1118, ../sass/_custom.scss */
+.quickstart .steps .right p.t {
+  color: #00B181;
+  margin-bottom: 5px;
+}
+/* line 1122, ../sass/_custom.scss */
+.quickstart .steps .right p.d {
+  font-size: 11px;
+  color: #fff;
+}
+/* line 1127, ../sass/_custom.scss */
+.quickstart .steps img {
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  display: none;
+}
+/* line 1135, ../sass/_custom.scss */
+.quickstart .steps .active span {
+  background-color: #00B181;
+  border: 0;
+}
+/* line 1139, ../sass/_custom.scss */
+.quickstart .steps .active img {
+  display: block;
+}
+/* line 1144, ../sass/_custom.scss */
+.quickstart .steps .done span {
+  background-color: #00B181;
+  border: 0;
+}
+/* line 1148, ../sass/_custom.scss */
+.quickstart .steps .done img {
+  display: none;
+}
+/* line 1153, ../sass/_custom.scss */
+.quickstart .qsWrapper {
+  background-color: #FAFAF9;
+  width: 100%;
+  float: left;
+  margin-top: 12px;
+}
+/* line 1158, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsHeader {
+  background-color: #fff;
+  padding: 24px;
+}
+/* line 1161, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsHeader h2 {
+  font-size: 20px;
+  margin: 0;
+}
+/* line 1166, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody {
+  padding: 2% 0;
+  min-height: 330px;
+}
+/* line 1172, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .form-group {
+  float: left;
+  width: 100%;
+}
+/* line 1176, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+/* line 1180, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap h4 {
+  margin-bottom: 20px;
+}
+/* line 1183, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap .row {
+  margin-bottom: 30px;
+}
+/* line 1186, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap .input-group-addon {
+  border: 0;
+  background-color: transparent;
+}
+/* line 1190, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap input[name="stamps"] {
+  height: 70px;
+}
+/* line 1193, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .stampsWrap label {
+  font-weight: normal;
+}
+/* line 1197, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsBody .design {
+  float: left;
+}
+/* line 1201, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsFooter {
+  float: left;
+  width: 100%;
+  padding: 24px;
+  color: #9a9da0;
+}
+/* line 1206, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsFooter button {
+  width: 100px;
+}
+/* line 1208, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsFooter button .fa {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 1212, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsFooter button.nextStep {
+  color: #fff;
+  background-color: #00B181;
+  float: right;
+}
+/* line 1217, ../sass/_custom.scss */
+.quickstart .qsWrapper .qsFooter button.backStep {
+  float: left;
+}
+/* line 1223, ../sass/_custom.scss */
+.quickstart .qsFinish .qsBody {
+  text-align: center;
+}
+/* line 1225, ../sass/_custom.scss */
+.quickstart .qsFinish .qsBody h3 {
+  margin-top: 5%;
+}
+/* line 1228, ../sass/_custom.scss */
+.quickstart .qsFinish .qsBody button {
+  margin-top: 2%;
+  border-color: #00B181;
+  height: 56px;
+  width: 210px;
+}
+
+/* line 1243, ../sass/_custom.scss */
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 1249, ../sass/_custom.scss */
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  /* line 1254, ../sass/_custom.scss */
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1260, ../sass/_custom.scss */
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1266, ../sass/_custom.scss */
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
 /**
  * Custom MEDIA QUERIES
  * Created by PhpStorm.
  * User: G.ELLURANGGO
  */
 /*==========  Media Queries
-Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
+
 /* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 15, ../sass/mediaq.scss */
+  .quickstart .content {
+    width: 95%;
+  }
+}
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

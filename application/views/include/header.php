@@ -8,9 +8,7 @@
     <meta name="Fidelity" content="">
     <title>CMS - Fidelity</title>
 	
-	
-
-    <!-- fonts-->
+	<!-- fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,300italic,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
@@ -38,15 +36,18 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="<?php echo base_url("dashboard"); ?>"><i class="icon"></i><span>DASHBOARD</span></a></li>
-            <li><a href="<?php echo base_url("management"); ?>"><i class="icon"></i><span>MANAGEMENT</span></a></li>
-            <li><a href="<?php echo base_url("addons"); ?>"><i class="icon"></i><span>ADD-ONS</span></a></li>
-            <li><a href="<?php echo base_url("design"); ?>"><i class="icon"></i><span>DESIGN</span></a></li>
-            <li><a href="<?php echo base_url("promos"); ?>"><i class="icon"></i><span>PROMOS</span></a></li>
-            <li><a href="<?php echo base_url("achievementunlock"); ?>"><i class="icon"></i><span>ACHIVEMENT UNLOCK</span></a></li>
-            <li><a href="<?php echo base_url("reports"); ?>"><i class="icon"></i><span>REPORTS</span></a></li>
-            <li><a href="<?php echo base_url("transactionhistory"); ?>"><i class="icon"></i><span>TRANSACTION HISTORY</span></a></li>
-            <li><a href="<?php echo base_url("help"); ?>"><i class="icon"></i><span>HELP</span></a></li>
+            <li class="das"><a href="<?php echo base_url("dashboard"); ?>"><i class="icon"></i><span>DASHBOARD</span></a></li>
+            <li class="mer"><a href="<?php echo base_url("merchant"); ?>"><i class="icon"></i><span>MERCHANT</span></a></li>
+            <li class="usr"><a href="<?php echo base_url("users"); ?>"><i class="icon"></i><span>USERS</span></a></li>
+            <li class="out"><a href="#"><i class="icon"></i><span>LOGOUT</span></a></li>
+            <li class="man"><a href="<?php echo base_url("management"); ?>"><i class="icon"></i><span>MANAGEMENT</span></a></li>
+            <li class="add"><a href="<?php echo base_url("addons"); ?>"><i class="icon"></i><span>ADD-ONS</span></a></li>
+            <li class="des"><a href="<?php echo base_url("design"); ?>"><i class="icon"></i><span>DESIGN</span></a></li>
+            <li class="pro"><a href="<?php echo base_url("promos"); ?>"><i class="icon"></i><span>PROMOS</span></a></li>
+            <li class="ach"><a href="<?php echo base_url("achievementunlock"); ?>"><i class="icon"></i><span>ACHIVEMENT UNLOCK</span></a></li>
+            <li class="rep"><a href="<?php echo base_url("reports"); ?>"><i class="icon"></i><span>REPORTS</span></a></li>
+            <li class="tra"><a href="<?php echo base_url("transactionhistory"); ?>"><i class="icon"></i><span>TRANSACTION HISTORY</span></a></li>
+            <li class="hel"><a href="<?php echo base_url("help"); ?>"><i class="icon"></i><span>HELP</span></a></li>
 
         </ul>
     </div>

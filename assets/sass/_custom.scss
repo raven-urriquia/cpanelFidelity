@@ -3,7 +3,9 @@
  * Created by PhpStorm.
  * User: G.ELLURANGGO
  */
-
+html,body{
+  //position: relative;
+}
 .font-family {
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,7 +17,15 @@ a,a:hover,a:active,a:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
-.saveButton {
+.noBoxShadow{
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+.form-control{
+  @extend .noBoxShadow;
+}
+.saveButton,.resetButton{
   font-size:16px;
   height:44px;
   width:142px;
@@ -64,6 +74,7 @@ body{
   width:240px;
   float: left;
   height: 100%;
+  min-height: 100%;
   background: #152023;
   @extend .font-family;
   .logoholder {
@@ -127,32 +138,41 @@ body{
       background-repeat: no-repeat;
       background-image: url("../images/menu_icons.png");
     }
-    li:first-child .icon{
+    li.das .icon{
       background-position: -2px 5px;
     }
-    li:nth-child(2) .icon{
+    li.man .icon{
       background-position: -2px -60px;
     }
-    li:nth-child(3) .icon{
+    li.mer .icon{
+      background-position: -2px -60px;
+    }
+    li.add .icon{
       background-position: -2px -120px;
     }
-    li:nth-child(4) .icon{
+    li.des .icon{
       background-position: -2px -177px;
     }
-    li:nth-child(5) .icon{
+    li.pro .icon{
       background-position: -2px -237px;
     }
-    li:nth-child(6) .icon{
+    li.ach .icon{
       background-position: -2px -297px;
     }
-    li:nth-child(7) .icon{
+    li.rep .icon{
       background-position: -2px -357px;
     }
-    li:nth-child(8) .icon{
+    li.tra .icon{
       background-position: -2px -417px;
     }
-    li:last-child .icon{
+    li.hel .icon{
       background-position: -2px -477px;
+    }
+    li.usr .icon{
+      background-position: -2px -536px;
+    }
+    li.out .icon{
+      background-position: -2px -596px;
     }
   }
 
@@ -225,6 +245,7 @@ body{
         border-left: 0;
         outline: 0;
         padding: 10px 12px;
+        height:42px;
         i{
           color: #AEAAA5;
         }
@@ -358,7 +379,7 @@ body{
   }
 
 }
-#addBranch,#addEmployee,#addTablet {
+#addBranch,#addEmployee,#addTablet,#merchantDetails,#addUser  {
   button{
     width:48%;
     padding:12px;
@@ -495,6 +516,7 @@ body{
       @extend .hex;
     }
     .col-md-4{
+      padding:0;
       i{
         font-size:12px;
         font-style: normal;
@@ -503,7 +525,7 @@ body{
       }
     }
     .presetPalette{
-      width:230px;
+      //width:230px;
       float: left;
       button{
         width:174px;
@@ -664,6 +686,7 @@ body{
           float: left;
           width:100%;
           padding-top: 10px;
+
           ul {
             padding:0;
             text-align: center;
@@ -763,6 +786,7 @@ body{
         height: 279px;
         margin: 38px 0 0 33px;
         float: left;
+        background-size: cover;
       }
       .customTablet{
         background:url("../images/tabletBg.png") no-repeat center;
@@ -770,8 +794,9 @@ body{
         height: 279px; 
         float: left;
         img.tabletCustomLogo {
-          width: 70px;
-          margin-top: 5px;
+          width: 60px;
+          margin-top: 12px;
+          height: 60px;
         }
         .customButton{
           background-color: #00AFEE;
@@ -815,7 +840,24 @@ body{
     padding: 10px;
   }
 }
+.setupPunch{
+  .row{
+    width:360px;
+    //border:1px solid #222;
 
+  }
+  .input-group{
+    float: right;
+    //width:182px;
+    .input-group-addon{
+      border:0;
+      background-color: transparent;
+    }
+    select{
+      @extend .noBorderRadius;
+    }
+  }
+}
 .promos{
   padding:20px 30px;
   .row{
@@ -895,6 +937,40 @@ body{
   }
 
 }
+#merchantDetails {
+  .modal-dialog {
+    width: 542px;
+  }
+  input {
+    background-color: transparent;
+    cursor: text;
+    margin-bottom: 6px;
+  }
+  select{
+    margin-bottom:6px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+  }
+  label{
+    margin-top:8px;
+  }
+  #merchDepSlip{
+    margin-top:6px;
+  }
+
+  .form-group{
+    margin-bottom: 5px;
+  }
+}
+.actionButton{
+  margin-top:20px;
+}
+#addUser {
+  .radio{
+    margin-top:0;
+  }
+}
+
 
 .dashboard {
   background-color: transparent!important;
@@ -990,5 +1066,205 @@ body{
 
   .tick line{
     opacity: 1;
+  }
+}
+
+
+//-- quickstart
+.qsTwo,.qsThree,.qsFinish{
+  display: none;
+}
+.punchcard{
+  display: none;
+}
+.loyalty{
+  display: none;
+}
+.quickstart {
+  //display: none;
+  position: absolute;
+  background-image: url("../images/qsBg.png");
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height:100%;
+  overflow-y: auto;
+  .content{
+    width:70%;
+    //border: 1px solid #fff;
+    margin: 4% auto;
+  }
+  .steps{
+    h3{
+      color:#fff;
+    }
+    span{
+      float: left;
+      -webkit-border-radius:100%;
+      -moz-border-radius:100%;
+      border-radius:100%;
+      font-size: 18px;
+      width: 27px;
+      height: 27px;
+      text-align: center;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    .right{
+      float: left;
+      margin-left: 10px;
+      p.t{
+        color:#00B181;
+        margin-bottom: 5px;
+      }
+      p.d{
+        font-size:11px;
+        color:#fff;
+      }
+    }
+    img {
+      position: absolute;
+      left: 20px;
+      bottom: -20px;
+      display: none;
+    }
+
+    .active {
+      span{
+        background-color: #00B181;
+        border:0;
+      }
+      img{
+        display: block;
+      }
+    }
+    .done{
+      span{
+        background-color: #00B181;
+        border:0;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+  .qsWrapper{
+    background-color: #FAFAF9;
+    width:100%;
+    float: left;
+    margin-top: 12px;
+    .qsHeader{
+      background-color: #fff;
+      padding:24px ;
+      h2{
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+    .qsBody{
+      padding:2% 0;
+      min-height: 330px;;
+      input, select, textarea{
+        @extend .noBorderRadius;
+      }
+      .form-group{
+        float: left;
+        width:100%;
+      }
+      .stampsWrap{
+        width:350px;
+        margin:0 auto;
+        margin-top:8%;
+        h4{
+          margin-bottom:20px ;
+        }
+        .row{
+          margin-bottom: 30px;
+        }
+        .input-group-addon{
+          border:0;
+          background-color: transparent;
+        }
+        input[name="stamps"]{
+          height:70px;
+        }
+        label{
+          font-weight:normal;
+        }
+      }
+      .design{
+        float: left;
+      }
+    }
+    .qsFooter{
+      float: left;
+      width:100%;
+      padding: 24px;
+      color: #9a9da0;
+      button{
+        width: 100px;
+        .fa{
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        &.nextStep{
+          color:#fff;
+          background-color: #00B181;
+          float: right;
+        }
+        &.backStep{
+          float: left;
+        }
+      }
+    }
+  }
+  .qsFinish .qsBody{
+    text-align: center;
+    h3{
+      margin-top:5%;
+    }
+    button{
+      margin-top: 2%;
+      border-color: #00B181;
+      height:56px;
+      width:210px;
+    }
+  }
+}
+
+
+// end
+
+
+
+//custom grid
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
   }
 }
