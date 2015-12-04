@@ -36,6 +36,7 @@
                         <button class="btn btn-default" id="btnCard">Card</button>
                         <button class="btn btn-primary active" id="btnMobile">Mobile</button>
                     </div>
+					<form action="<?= base_url('Design/uploadDesign');?>" method="POST" enctype="multipart/form-data">
                     <div class="mobileTab">
                         <div class="col-md-4">
                             <div class="row left">
@@ -44,7 +45,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -54,7 +55,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 640px x 1136px</i>
                                     </div>
@@ -118,7 +119,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -128,7 +129,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -177,6 +178,8 @@
                              
                         </div><!--right-->
                     </div><!--mobileTab-->
+					</form>
+					<form action="<?= base_url('Design/uploadDesign');?>" method="POST" enctype="multipart/form-data">					
                     <div class="cardTab">
                         <div class="col-md-4">
                             <div class="row left">
@@ -185,7 +188,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -195,7 +198,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 500px x 200px</i>
                                     </div>
@@ -224,6 +227,8 @@
                             </div><!--cardFrame-->
                         </div><!--right-->
                     </div><!--cardTab-->
+					</form>		
+					<form action="<?= base_url('Design/uploadDesign');?>" method="POST" enctype="multipart/form-data">	
                     <div class="tabletTab">
                         <div class="col-md-4">
                             <div class="row left">
@@ -232,7 +237,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -242,7 +247,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 640px x 1136px</i>
                                     </div>
@@ -306,7 +311,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -316,7 +321,7 @@
                                     <img src="assets/images/addImage.jpg" class="imgPrev" alt="">
                                     <div class="pull-left">
                                     <span class="btn btn-default btn-file">
-                                    Choose File <input type="file">
+                                    Choose File <input type="file" name="uploadFile[]">
                                     </span>
                                         <i>At least 200px x 200px</i>
                                     </div>
@@ -338,7 +343,7 @@
 
                         </div><!--right-->
                     </div><!--mobileTab-->
-
+					</form>	
                 </div><!--row->
             </div><!--/content-->
         </div> <!-- /container -->

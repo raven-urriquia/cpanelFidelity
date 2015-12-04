@@ -27,32 +27,18 @@
 
     </div>
     <div class="container">
-        <div class="row">
-            <div class="search col-md-4">
-                <form action="">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                      </span>
-                    </div><!-- /input-group -->
-                </form>
-            </div>
+        <div class="row">            
             <div class="col-md-4 forAddBtn pull-right">
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon2">Filter</span>
-                    <select name="amountPoints" class="form-control" id="amountPoints" aria-describedby="basic-addon2">
-                        <option value="1">All Branches</option>
-                        <option value="1">Branch 1</option>
-                        <option value="1">Branch 2</option>
-                    </select>
-
+                    <div id="selectBranch"></div>
                 </div>
             </div>
         </div>
+		
         <div id="content" class="transHistory">
                 <div class="noTab">
-                    <table data-toggle="table" class="data-table management ">
+                    <table id="historyTable" data-toggle="table" class="data-table management ">
                         <thead>
                         <tr>
                             <th>Date &amp; Time</th>
@@ -64,27 +50,48 @@
                         </tr>
                         </thead>
                         <tbody>
+						<?php foreach ($alltransactions as $alltransaction): ?>
                         <tr>
-                            <td>12/30/2015 12:59PM</td>
-                            <td>Purchase</td>
-                            <td>John Doe</td>
-                            <td>P 100.00</td>
-                            <td>0001888641</td>
-                            <td>SM Megamall</td>
+                            <td><?= $alltransaction['timestamp'] ?></td>
+                            <td><?= $alltransaction['transactionType'] ?></td>
+                            <td><?= $alltransaction['firstName'] ?> <?= $alltransaction['lastName'] ?></td>
+                            <td>P <?= $alltransaction['amountPaidWithCash'] ?></td>
+                            <td><?= $alltransaction['receiptReferenceNumber'] ?></td>
+                            <td><?= $alltransaction['branchName'] ?></td>
                         </tr>
-                        <tr>
-                            <td>12/30/2015 12:59PM</td>
-                            <td>Redeem</td>
-                            <td>Jane Doe</td>
-                            <td>P 100.00</td>
-                            <td>0001888641</td>
-                            <td>SM Megamall</td>
-                        </tr>
-
+						<?php endforeach; ?>
                         </tbody>
                     </table>
                 </div><!--noTab-->
-
+            </div>
         </div><!--/content-->
     </div> <!-- /container -->
 </div> <!--rightcontent-->
+
+<script>
+
+$(document).ready(function() {
+    $('#historyTable').DataTable( {
+        initComplete: function () {
+            this.api().columns(5).every( function () {
+                var column = this;
+                var select = $('<select><option value="">All Branches</option></select>')
+                    .appendTo('#selectBranch')
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+ 
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
+                            .draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+        }
+    } );
+} );
+</script>

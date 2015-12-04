@@ -37,7 +37,7 @@
         </div>       
 		
 		<div id="content" class="addons">
-			<div class="noTab">
+			<div div class="noTab">
                     <table id="tabletAddons">
                         <thead>
                         <tr>
@@ -56,7 +56,7 @@
 						<?php endforeach; ?>
                         </tbody>
                     </table>
-
+                </div>
             </div>
         </div>	
     </div> <!-- /container -->
