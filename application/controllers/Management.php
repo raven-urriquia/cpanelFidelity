@@ -38,4 +38,15 @@ class Management extends CI_Controller
 	public function deleteBranch()
 	{
 	}
+	
+	public function addEmployee()
+	{		
+		$data['employeeName'] = $_POST['employeeName'];
+		$data['selectBranch'] = $_POST['selectBranch'];
+		$data['fourDigit'] = $_POST['fourDigit'];	
+		
+		//$this->M_management->addEmployee($data);	
+		$this->session->set_flashdata('message', 'Employee Added Successfully!');			
+		redirect('management', 'refresh');
+	}
 }

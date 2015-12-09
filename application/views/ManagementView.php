@@ -178,21 +178,55 @@
                 <span class="ex" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></span>
                 <div class="modal-header">Add Employee</div>
                 <div class="modal-body">
-                    <form action="">
+                    <form method="POST" action="<?= base_url('Management/addEmployee');?>">
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <label for="employeeName">Employee Name</label>
-                                <input type="text" class="form-control" name="employeeName" id="employeeName"/>
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="middleName">Middle Name</label>
+                                <input type="text" class="form-control" name="middleName" id="middleName"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" name="email" id="email"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="mobileNumber">Mobile Number</label>
+                                <input type="text" class="form-control" name="mobileNumber" id="mobileNumber"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" name="address" id="address"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" id="username"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="password">Password</label>
+                                <input type="text" class="form-control" name="password" id="password"/>
+                            </div>
+							<div class="col-md-12">
+                                <label for="repeatPassword">Repeat Password</label>
+                                <input type="text" class="form-control" name="repeatPassword" id="repeatPassword"/>
                             </div>
                             <div class="col-md-8">
-                                <label for="selectBranch">Select Branch</label>
+                                <label for="selectBranch">Select Branch</label>								
                                 <select class="form-control" name="selectBranch" id="selectBranch">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+								<?php foreach ($branches as $branch): ?>
+                                    <option value="<?= $branch['id'] ?>"><?= $branch['branchName'] ?></option>
+								<?php endforeach; ?>
+                                </select>								
                             </div>
                             <div class="col-md-4">
                                 <label for="fourDigit">4 Digit Code <a href=""><i class="fa fa-question-circle"></i></a></label>

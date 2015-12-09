@@ -40,6 +40,12 @@ Class M_management extends CI_Model {
         return $query->result_array();
     }
 	
+	function addEmployee($data)
+	{
+        $sql = "INSERT INTO Users (employeeId, merchantId, branchId, firstName, lastName, middleName, email, phoneNumber, mobileNumber, address, username, password, repeatPassword, lastlogin, lastlogout, loginCount, userType) VALUES ('".$data['employeeId']."','".$data['merchantId']."','".$data['branchId']."','".$data['firstName']."','".$data['lastName']."','".$data['middleName']."','".$data['email']."','".$data['phoneNumber']."','".$data['mobileNumber']."','".$data['address']."','".$data['username']."','".$data['password']."','".$data['repeatPassword']."','".$data['lastlogin']."','".$data['lastlogout']."','".$data['loginCount']."','".$data['userType']."')";
+        $query = $this->db->query($sql);
+    }
+	
 	function getCustomer($merchantID)
 	{
         $sql = "SELECT * FROM Customer where merchantId = '".$merchantID."'";
